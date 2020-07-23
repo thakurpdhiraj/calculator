@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Convert Currency, Number System, Area, Time, Length, Volume, Speed, Date">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row p-5">
+				<div class="col-3">
+					<div class="nav flex-column nav-pills" id="calculator-tabs" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="currency-tab" data-toggle="pill" href="#currency-panel" role="tab" aria-controls="currency-panel" aria-selected="true">Currency</a>
+						<a class="nav-link" id="programmer-tab" data-toggle="pill" href="#programmer-panel" role="tab" aria-controls="programmer-panel" aria-selected="false">Number Systems</a>
+						<a class="nav-link" id="area-tab" data-toggle="pill" href="#area-panel" role="tab" aria-controls="area-panel" aria-selected="false">Area</a>
+						<a class="nav-link" id="time-tab" data-toggle="pill" href="#time-panel" role="tab" aria-controls="time-panel" aria-selected="false">Time</a>
+						<a class="nav-link" id="length-tab" data-toggle="pill" href="#length-panel" role="tab" aria-controls="length-panel" aria-selected="true">Length</a>
+						<a class="nav-link" id="volume-tab" data-toggle="pill" href="#volume-panel" role="tab" aria-controls="volume-panel" aria-selected="false">Volume</a>
+						<a class="nav-link" id="speed-tab" data-toggle="pill" href="#speed-panel" role="tab" aria-controls="speed-panel" aria-selected="false">Speed</a>
+						<a class="nav-link" id="date-tab" data-toggle="pill" href="#date-panel" role="tab" aria-controls="date-panel" aria-selected="false">Date</a>
+					</div>
+				</div>
+				<div class="col-9">
+					<div class="tab-content" id="calculator-panel">
+						<div class="tab-pane fade show active" id="currency-panel" role="tabpanel" aria-labelledby="currency-tab"><span wicket:id="currency"></span></div>
+						<div class="tab-pane fade" id="programmer-panel" role="tabpanel" aria-labelledby="programmer-tab"><span wicket:id="programmer"></span></div>
+						<div class="tab-pane fade" id="area-panel" role="tabpanel" aria-labelledby="area-tab"><span wicket:id="area"></span></div>
+						<div class="tab-pane fade" id="time-panel" role="tabpanel" aria-labelledby="time-tab"><span wicket:id="time"></span></div>
+						<div class="tab-pane fade" id="length-panel" role="tabpanel" aria-labelledby="length-tab"><span wicket:id="length"></span></div>
+						<div class="tab-pane fade" id="volume-panel" role="tabpanel" aria-labelledby="volume-tab"><span wicket:id="volume"></span></div>
+						<div class="tab-pane fade" id="speed-panel" role="tabpanel" aria-labelledby="speed-tab"><span wicket:id="speed"></span></div>
+						<div class="tab-pane fade" id="date-panel" role="tabpanel" aria-labelledby="date-tab"><span wicket:id="date"></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

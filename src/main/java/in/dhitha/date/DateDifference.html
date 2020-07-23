@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Number System Converter</title>
+</head>
+<body>
+<wicket:panel>
+  <h3 class="text-center">Date Calculation</h3>
+  <div class="row p-3 m-3"><select class="form-control"  wicket:id="select"></select></div>
+  <div class="row"><span wicket:id="feedback"></span></div>
+
+  <div wicket:id="diffContainer" class="border p-2 m-1">
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label>From</label>
+          <input wicket:id="fromDiffDate" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label>To</label>
+          <input wicket:id="toDiffDate" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label>Difference</label>
+          <h3 wicket:id="outputDiff"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div wicket:id="calcContainer" class="border p-2 m-1">
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label>From</label>
+          <input wicket:id="fromCalcDate" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+            <div wicket:id="operationRadio"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label>Years</label>
+        <select class="form-control"  wicket:id="yearCalc"></select>
+      </div>
+      <div class="col">
+        <label>Weeks</label>
+        <select class="form-control"  wicket:id="weekCalc"></select>
+      </div>
+      <div class="col">
+        <label>Days</label>
+        <select class="form-control"  wicket:id="dayCalc"></select>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col">
+        <div class="form-group">
+          <label>Difference</label>
+          <h3 wicket:id="outputCalc"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</wicket:panel>
+</body>
+</html>

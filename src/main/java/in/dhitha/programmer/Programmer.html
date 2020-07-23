@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Number System Converter</title>
+</head>
+<body>
+<wicket:panel>
+  <h3 class="text-center">Convert Number</h3>
+  <div class="row"><span wicket:id="feedback"></span></div>
+  <div class="row">
+    <div class="col">
+      <div class="form-row border p-4">
+        <div class="col">
+          <label>Select Number System</label>
+          <select class="form-control" wicket:id="systemSelected"></select>
+        </div>
+        <div class="col">
+          <label>Enter Input</label>
+          <input type="text" class="form-control" wicket:id="numberField">
+        </div>
+      </div>
+      <div class="form-group mt-4">
+        <label>Decimal</label>
+        <span class="form-control" wicket:id="decField"></span>
+      </div>
+      <div class="form-group">
+        <label>Binary</label>
+        <span class="form-control" wicket:id="binField"></span>
+      </div>
+      <div class="form-group">
+        <label>Hex</label>
+        <span class="form-control" wicket:id="hexField"></span>
+      </div>
+      <div class="form-group">
+        <label>Octal</label>
+        <span class="form-control" wicket:id="octField"></span>
+      </div>
+    </div>
+  </div>
+</wicket:panel>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Time Converter</title>
+</head>
+<body>
+<wicket:panel>
+  <h3 class="text-center">Convert <span wicket:id="appName"></span></h3>
+  <div class="row"><span wicket:id="feedback"></span></div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label>From</label>
+        <select class="form-control" wicket:id="fromSelect"></select><br>
+        <input type="number" class="form-control" wicket:id="fromField">
+      </div>
+      <div class="form-group mt-5">
+        <label>To</label>
+        <select class="form-control" wicket:id="toSelect"></select><br>
+        <input type="number" class="form-control" wicket:id="toField">
+      </div>
+    </div>
+  </div>
+  <wicket:child/>
+</wicket:panel>
+</body>
+</html>
